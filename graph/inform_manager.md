@@ -3,6 +3,10 @@
 
 # Solution
 This problem is basically finding maximum path from head to end of graph from a directed graph.  
+- Create a weighted graph in adjacency form in which the key is the manager, and children are their (employee, informtime) 
+- Do a DFS. If an employee is at the bottom, return 0 
+- If a manager has n employees, for each employee, we return the maximum path starting from that employee
+- The solution: The time for a manager = max(manager's employees) + informTime[manager] 
 
 ```python
 class Solution(object):
