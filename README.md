@@ -12,8 +12,15 @@ print collections.Counter(['a', 'b', 'c', 'a', 'b', 'b'])
 --> {a: 2, b: 3, c: 1} 
 ```
 
-#### Sort dictionary by value 
+### Check if there is duplicate characters in string
+```python
+if len(set(word)) < len(word):
+   return True 
+````
+
+### Sort dictionary by value 
 ```python
 import collections
-sorted_dict = collections.OrderedDict(sorted_x) 
+sorted_dict = {k: d[k] for k in sorted(d, key=d.get, reverse=True)} 
 ```
+
