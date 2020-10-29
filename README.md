@@ -21,6 +21,6 @@ if len(set(word)) < len(word):
 ### Sort dictionary by value 
 ```python
 import collections
-sorted_dict = {k: d[k] for k in sorted(d, key=d.get, reverse=True)} 
+sorted_dict = {k: d[k] for k in sorted(d, key=d.get)} 
 ```
 
