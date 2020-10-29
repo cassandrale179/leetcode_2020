@@ -20,7 +20,8 @@ if len(set(word)) < len(word):
 
 ### Sort dictionary by value 
 ```python
-import collections
+d = {"hi": 3, "hello": 2} 
 sorted_dict = {k: d[k] for k in sorted(d, key=d.get)} 
+--> answer = [('hello', 2), ('hi', 3)] 
 ```
 
